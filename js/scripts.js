@@ -26,5 +26,13 @@ var replaceFive = function(input) {
   return "pong";
 };
 
+var replaceFifteen = function(input) {
+  // var pingpong = "";
+  for(var n = 0; n <= input; n++) {
+  if(n % 15 === 0);
+  };
+  return "pingpong";
+};
+
 // var countTo = parseInt($("input#countTo").val());
 //CHECK count-up FOR CODE TO TURN ARRAY INTO <ul>
