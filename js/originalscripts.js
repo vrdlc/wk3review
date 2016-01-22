@@ -1,64 +1,33 @@
-var ping = function(n) {
-    if(n % 3 === 0){
-      return 'ping';
-    };
-};
-
-var pong = function(n) {
-  if(n % 5 === 0) {
-    return 'pong';
-  };
-};
-
-var pingpong = function(n) {
-  if(n % 15 === 0) {
-    return 'pingpong';
-  };
-};
-
-// var allNumbers = function(n) {
-//   if(n != ping || n != pong || n!== pingpong)
-//     array.push(n);
-// }
-
 var countUp = function(countTo) {
   var array = [];
-  for (var n = 0; n <= countTo; n++) {
-    array.push(n);
-     if(n = ping){
-       array.push('ping');
-    } if(n = pong) {
+  for (var n = 1; n <= countTo; n++) {
+     if(n % 15 === 0) {
+       array.push('pingpong');
+    } else if(n % 5 === 0) {
         array.push('pong');
-    }
-     if(n = pingpong) {
-        array.push('pingpong')
-     }
-     return array;
-  };
+    } else if(n % 3 === 0) {
+        array.push("ping")
+    } else {
+     array.push[n];
+   }
+  }; return array;
 };
 
 
-
-
-
-
-
-//ORIGINAL CODE TO PUT ITEMS INTO <li>
 function write_letters(endResult){
     var items = document.getElementById("itemList");
-    for (var i = 0; i < endResult.length; i++ ) {
+    items.innerHTML = "";
+    for (var n = 0; n < endResult.length; n++ ) {
         var item = document.createElement("li");
-        item.innerHTML = endResult[i];
+        item.innerHTML = endResult[n];
         items.appendChild(item);
     };
     return;
 };
 
-
-
 $(document).ready(function() {
-  $("form#pingpong").submit(function() {
-    debugger;
+  $("form#pingpong").submit(function(event) {
+
     var countTo = parseInt($("input#countTo").val());
     var endResult = countUp(countTo);
     write_letters(endResult);

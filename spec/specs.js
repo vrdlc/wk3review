@@ -6,7 +6,7 @@ describe("countUp", function() {
 
 describe("ping", function() {
   it("returns 'ping' when given a number divisible by 3", function() {
-    expect(ping(3)).to.equal("ping")
+    expect(countUp(3)).to.equal("ping")
   });
 });
 
