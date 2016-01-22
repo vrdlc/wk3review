@@ -12,7 +12,13 @@ describe("replaceThree", function() {
 
 describe("replaceFive", function() {
   it("returns 'pong' when given a number divisible by 5", function() {
-    expect(replaceThree("10")).to.equal("pong")
+    expect(replaceFive("10")).to.equal("pong")
+  });
+});
+
+describe("replaceFifteen", function() {
+  it("returns 'pingpong' when given a number divisible by 15", function() {
+    expect(replaceFifteen("15")).to.equal("pingpong")
   });
 });
 
