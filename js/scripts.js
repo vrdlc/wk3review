@@ -1,14 +1,14 @@
 
-// 
-//
-// var countUp = function(input) {   //PASSED
-//   var output = [];
-//   for (var n=1; n <= input; n++) {
-//     output.push(n);
-//   };
-//   return output;
-//
-// };
+
+
+var countUp = function(input) {   //PASSED
+  var output = [];
+  for (var n=1; n <= input; n++) {
+    output.push(n);
+  };
+  return output;
+
+};
 
 var replaceThree = function(input) {
   // var pingpong = "";
