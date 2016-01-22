@@ -4,11 +4,11 @@ describe("countUp", function() {
   });
 });
 
-// describe("replaceThree", function() {
-//   it("replaces every number divisible by 3 with 'ping'")
-//     expect(replaceThree(5)).to.eql([0, 1, 2, ping, ])
-// });
-
+describe("replaceThree", function() {
+  it("replaces every number divisible by 3 with ping", function() {
+    expect(replaceThree(5)).to.eql([0, 1, 2, ping, 4, 5])
+  });
+});
 
 
 //CHECK count-up FOR CODE TO TURN ARRAY INTO <ul>
