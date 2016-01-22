@@ -8,7 +8,7 @@ var countUp = function(countTo) {
     } else if(n % 3 === 0) {
         array.push("ping")
     } else {
-     array.push[n];
+     array.push(n);
    }
   }; return array;
 };
