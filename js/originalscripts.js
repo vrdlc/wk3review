@@ -16,6 +16,10 @@ var pingpong = function(n) {
   };
 };
 
+// var allNumbers = function(n) {
+//   if(n != ping || n != pong || n!== pingpong)
+//     array.push(n);
+// }
 
 var countUp = function(countTo) {
   var array = [];
@@ -28,7 +32,7 @@ var countUp = function(countTo) {
     }
      if(n = pingpong) {
         array.push('pingpong')
-    }
+     }
      return array;
   };
 };
@@ -40,26 +44,24 @@ var countUp = function(countTo) {
 
 
 //ORIGINAL CODE TO PUT ITEMS INTO <li>
-// function write_letters(endResult){
-//     var items = document.getElementById("itemList");
-//     for (var i = 0; i < endResult.length; i++ ) {
-//         var item = document.createElement("li");
-//         item.innerHTML = endResult[i];
-//         items.appendChild(item);
-//     };
-//     return;
-// };
+function write_letters(endResult){
+    var items = document.getElementById("itemList");
+    for (var i = 0; i < endResult.length; i++ ) {
+        var item = document.createElement("li");
+        item.innerHTML = endResult[i];
+        items.appendChild(item);
+    };
+    return;
+};
 
 
 
 $(document).ready(function() {
   $("form#pingpong").submit(function() {
-
+    debugger;
     var countTo = parseInt($("input#countTo").val());
     var endResult = countUp(countTo);
-    // write_letters(endResult);
-
-    $("#itemList").text(endResult)
+    write_letters(endResult);
 
     event.preventDefault();
   });
