@@ -1,12 +1,12 @@
-describe("countUp", function() {
-  it("counts up by 1 to the given number", function() {
-    expect(countUp(5)).to.eql([1, 2, 3, 4, 5])
-  });
-});
+// describe("countUp", function() {
+//   it("counts up by 1 to the given number", function() {
+//     expect(countUp(5)).to.eql([1, 2, 3, 4, 5])
+//   });
+// });
 
 describe("replaceThree", function() {
-  it("replaces every number divisible by 3 with ping", function() {
-    expect(replaceThree(5)).to.eql([0, 1, 2, ping, 4, 5])
+  it("returns 'ping' when given a number divisible by 3", function() {
+    expect(replaceThree("pong")).to.equal("ping")
   });
 });
 
