@@ -1,0 +1,44 @@
+.jumbotron {
+  background-color: #e0cb9e;
+}
+
+h1 {
+  text-align: center;
+}
+
+body {
+  background-color: #d9dbde;
+}
+
+#sidebar-wrapper {
+  background-color: #94b88e;
+  padding-top: 10px;
+  padding-right: 5px;
+  padding-bottom: 100%;
+}
+
+.text1 {
+  color: #e0cb9e;
+}
+
+.text2 {
+  color: white;
+}
+
+.sidebar-nav{
+  list-style: none;
+}
+
+li {
+  padding-top: 3px;
+}
+
+.btn-custom {
+  background-color: #9da3aa;
+
+}
+.btn-custom:hover,
+.btn-custom.active {
+  background-color: #6f848d;
+  border-color: #64767f;
+}

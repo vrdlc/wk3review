@@ -11,29 +11,74 @@
   </head>
   <body>
 
+<div class="jumbotron">
+
+
   <div class="container">
 
-    <h1>Play Numerical Ping Pong!</h1>
-    <p>Enter a number into the form and watch as every third number returns "ping", every fifth number returns "pong", and every fifteenth number returns "pingpong".</p>
+    <h1>Ping Pong!</h1>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-3">
 
+<div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="about">
 
-    <!-- <form id="numbers" class="form-inline">
-      <div class="form-group">
-        <label for="countTo">Number to count up to:</label>
-        <input type="text" class="form-control" id="countTo">
+                        <h2>About Ping Pong</h2>
+
+                </li>
+                <li>
+                    <h4 class="text1">Created by:</h4>
+                </li>
+                <li>
+                    <h4 class="text2">Ramon de la Cruz<br></h4>
+                    <h6 class="text2">(Special Thanks to Kit Fisto)</h6>
+                </li>
+                <li>
+
+                </li>
+                <li>
+                    <h4 class="text1">GitHub Username/URL:</h4>
+                </li>
+                <li>
+                    <h4><a href="https://github.com/vrdlc">vrdlc</a></h4>
+                </li>
+                <li>
+                    <h4 class="text1">Week 3 Test for:</h4>
+                </li>
+                <li>
+                    <h4 class="text2">Intro to Programming</h4>
+                </li>
+            </ul>
+        </div>
       </div>
-      <button type="submit" class="btn btn-success">Find out!</button>
-    </form> -->
+
+  <div class="col-sm-9">
+    <h2>Let's play!</h2>
+    <h4><strong>Rules:</strong></h4>
+    <p>Ping Pong will count up to your number from 1 with the following exceptions:</p>
+    <ol>
+      <li>Numbers divisible by 3 become "ping"</li>
+      <li>Numbers divisible by 5 become "pong"</li>
+      <li>Numbers divisible by 15 become "pingpong"</li>
+    </ol>
 
     <form id="pingpong" class="form-inline">
       <div class="form-group">
-        <label for="countTo">Enter your number:</label>
+        <label for="countTo">Enter your number here:</label>
         <input type="text" class="form-control" id="countTo">
-        <button type="submit" class="btn btn-success" >Submit your number!</button>
+        <button type="submit" class="btn btn-custom">Ping Pong!</button>
       </div>
     </form>
-  </div>
+
 
   <ul id="itemList"></ul>
+  </div>
+<!-- <div class="col-sm-offset-4">
+
+</div> -->
+</div>
   </body>
 </html>
